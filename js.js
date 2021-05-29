@@ -3,16 +3,16 @@ function clicked(){
 }
 
 
-let prevstring = document.querySelector('.aryansh')[0].innerHTML;
+let prevstring = document.querySelector('.aryansh').innerHTML;
 
 
-aryansh.addEventListner('mouseup', function(){
-    document.querySelector('.aryansh')[0].innerHTML = prevstring;
+aryansh1.addEventListener('mouseup', function(){
+    document.querySelector('.aryansh').innerHTML = prevstring;
     console.log("Mouse up");
 })
 
 
-aryansh.addEventListner('mousedown', function(){
-    document.querySelector('.aryansh')[0].innerHTML = "<b>yep...you clicked</b>";
-    console.log("Mouse down")
+aryansh1.addEventListener('mousedown', function(){
+    document.querySelector('.aryansh').innerHTML = "<b>yep...you clicked</b>";
+    console.log("Mouse down");
 })
