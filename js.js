@@ -1,18 +1,20 @@
-function clicked(){
-    console.log('aryansh')
-}
+// function clicked(){
+//     console.log('aryansh')
+// }
 
 
-let prevstring = document.querySelector('.aryansh').innerHTML;
+let prevstring = document.querySelector('.container').innerHTML;
+let i=0;
 
-
-aryansh1.addEventListener('mouseup', function(){
-    document.querySelector('.aryansh').innerHTML = prevstring;
-    console.log("Mouse up");
+btnid.addEventListener('mouseup', function(){
+    document.querySelector('.container').innerHTML = prevstring;
+    console.log("Mouse up",i);
+    console.log(prevstring);
+    i++;
 })
 
-
-aryansh1.addEventListener('mousedown', function(){
-    document.querySelector('.aryansh').innerHTML = "<b>yep...you clicked</b>";
+btnid.addEventListener('mousedown', function(){
+    document.querySelectorAll('.container')[0].innerHTML = "yep...you clicked";
+    console.log(document.getElementsByClassName('.container').innerHTML);
     console.log("Mouse down");
 })
